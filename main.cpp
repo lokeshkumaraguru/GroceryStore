@@ -23,15 +23,15 @@ do {
   {
     cout<<"What is the item?";
     cin>>itemone;
-  }
   if(numItems >= 5)
   {
     cout<<"You'll need a bigger list!";
   }
-  else
+  if(numItems < 5)
   {
     list[numItems] = itemone;
-    numItems + 1;
+    numItems++;
+  }
   }
 
 } while (input != 'q' || input == 'Q');
