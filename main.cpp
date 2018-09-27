@@ -26,14 +26,13 @@ while (input != 'q' || input != 'Q')
   if(input == 'a' || input == 'A')
   {
   
-  cout<<"What is the item?\n";
+  cout<<"What is the item?"<<endl;
   cin>>itemone;
   
-  }
   if(numItems >= 5)
   {
   
-  cout<<"You'll need a bigger list!\n";
+  cout<<"You'll need a bigger list!"<<endl;
   
   }
   if(numItems < 5)
@@ -43,12 +42,14 @@ while (input != 'q' || input != 'Q')
   numItems = numItems + 1;
   
   }
+
+  }
   if(input == 'q' || input == 'Q')
   {
 
   break;
 
-  }   
+  }
 
 }
 
