@@ -25,7 +25,8 @@ do {
     cin>>itemone;
   if(numItems >= 5)
   {
-    cout<<"You'll need a bigger list!";
+    cout<<"You'll need a bigger list!\n ";
+    cout<<"-------------------------------\n";
   }
   if(numItems < 5)
   {
