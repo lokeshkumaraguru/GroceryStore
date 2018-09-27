@@ -31,7 +31,7 @@ do {
   else
   {
     list[numItems] = itemone;
-    numItems++;
+    numItems + 1 ;
   }
 
 } while (input != 'q' || input == 'Q');
