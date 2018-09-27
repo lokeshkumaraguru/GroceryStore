@@ -21,11 +21,11 @@ do {
 
   if(input == 'a' || input == 'A')
   {
-    cout<<"What is the item?";
+    cout<<"What is the item?\n";
     cin>>itemone;
   if(numItems >= 5)
   {
-    cout<<"You'll need a bigger list!";
+    cout<<"You'll need a bigger list ";
   }
   if(numItems < 5)
   {
