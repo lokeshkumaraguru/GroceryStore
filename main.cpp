@@ -13,7 +13,9 @@ int numItems = 0;
 char input;
 string itemone;
 
-do {
+while (input != 'q' || input != 'Q')
+{
+
   cout<<"\n==GROCERY LIST MANAGER==";
   cout<<"\nEnter your choice: ";
   cout<<"\n (A)dd an item";
@@ -41,15 +43,14 @@ do {
   numItems = numItems + 1;
   
   }
+  if(input == 'q' || input == 'Q')
+  {
 
-if(input == 'q' || input == 'Q')
-{
+  break;
 
-break;
+  }   
 
 }
-
-} while (input != 'q' || input != 'Q');
 
 return 0;
 
