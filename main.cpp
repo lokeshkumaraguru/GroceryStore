@@ -1,15 +1,17 @@
 //Author: Lokesh Kumaraguru
 
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
+
 using namespace std;
 
 int main()
 {
-  string list[5]; //array of 5 strings
-  int numItems = 0;
-  char input;
-  string itemone;
+
+string list[5];
+int numItems = 0;
+char input;
+string itemone;
 
 do {
   cout<<"\n==GROCERY LIST MANAGER==";
@@ -21,21 +23,34 @@ do {
 
   if(input == 'a' || input == 'A')
   {
-    cout<<"What is the item?\n";
-    cin>>itemone;
-    if(numItems >= 5)
-    {
-      cout<<"You'll need a bigger list!\n";
-      break;
-    }
-    else
-    {
-      list[numItems] = itemone;
-      numItems = numItems + 1;
-    }
+  
+  cout<<"What is the item?\n";
+  cin>>itemone;
+  
+  }
+  if(numItems >= 5)
+  {
+  
+  cout<<"You'll need a bigger list!\n";
+  
+  }
+  if(numItems < 5)
+  {
+  
+  list[numItems] = itemone;
+  numItems = numItems + 1;
+  
   }
 
-} while (input != 'q' || input == 'Q');
+if(input == 'q' || input == 'Q')
+{
 
-  return 0;
+break;
+
+}
+
+} while (input != 'q' || input != 'Q');
+
+return 0;
+
 }
