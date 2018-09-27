@@ -26,7 +26,7 @@ do {
   if(numItems >= 5)
   {
     cout<<"You'll need a bigger list!\n ";
-    cout<<"--------------------------------------------------------------------------------";
+    break;
   }
   if(numItems < 5)
   {
