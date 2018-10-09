@@ -2,18 +2,20 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 int main()
 {
 
-string list[5];
+vector <string> list;
 int numItems = 0;
 char input;
 string itemone;
 
-while (input != 'q' || input != 'Q')
+while(input != 'q' &&  input != 'Q')
+
 {
 
   cout<<"\n==GROCERY LIST MANAGER==";
@@ -24,37 +26,39 @@ while (input != 'q' || input != 'Q')
   cin>>input;
 
   if(input == 'a' || input == 'A')
+  
   {
-  
-  cout<<"What is the item?"<<endl;
-  cin>>itemone;
-  
-  if(numItems >= 5)
-  {
-  
-  cout<<"You'll need a bigger list!"<<endl;
-  
-  }
-  if(numItems < 5)
-  {
-  
-  list[numItems] = itemone;
-  numItems = numItems + 1;
-  
-  }
+    
+    cout<<"What is the item?"<<endl;
+    cin>>itemone;
+
+    list.push_back(itemone);
+    numItems = numItems + 1;
 
   }
-  if(input == 'q' || input == 'Q')
-  {
 
+}
+
+if(input == 'q' || input == 'Q')
+
+{
+if(numItems > 0)
+  {
   cout<<"==ITEMS TO BUY=="<<endl;
-  cout<<"1 "<<list[0]<<endl;
-  cout<<"2 "<<list[1]<<endl;
-  cout<<"3 "<<list[2]<<endl;
-  cout<<"4 "<<list[3]<<endl;
-  cout<<"5 "<<list[4]<<endl;
-  break;
+  for (int index = 0;  index < numItems; index++)
+   
+  {
 
+  cout<<index+1<<" "<<list[index]<<endl;
+
+  }
+  }
+
+else
+  {
+  
+  cout<<"No items to buy!"<<endl;
+  
   }
 
 }
@@ -62,3 +66,4 @@ while (input != 'q' || input != 'Q')
 return 0;
 
 }
+
