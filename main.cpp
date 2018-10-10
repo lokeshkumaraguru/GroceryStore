@@ -37,7 +37,7 @@ while(input != 'Q' && input != 'q')
   cout<<"\n (A)dd an item";
   cout<<"\n (D)elete last item";
   cout<<"\n (Q)uit";
-  cout<<"\nYour choice (A/D/Q): ";
+  cout<<"\nYour choice (A/Q): ";
   cin>>input;
   
   }
