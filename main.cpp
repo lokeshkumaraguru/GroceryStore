@@ -84,7 +84,7 @@ while(input != 'Q' && input != 'q')
   if(numItems > 0)
   {
   
-    cout<<itemone;
+    cout<<list.back();
     cout<<" was deleted from the list.\n"<<endl;
     list.pop_back();
     numItems = numItems - 1;
